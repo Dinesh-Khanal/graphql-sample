@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+import Page from "./pages";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const client = new ApolloClient({
   uri: "http://localhost:4000",
@@ -11,9 +12,9 @@ const client = new ApolloClient({
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <Router>
     <ApolloProvider client={client}>
-      <App />
+      <Page />
     </ApolloProvider>
-  </React.StrictMode>
+  </Router>
 );
