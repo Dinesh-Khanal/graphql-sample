@@ -12,12 +12,12 @@ const Card = styled.div`
   cursor: pointer;
 `;
 const Cards = ({ user }) => {
-  const { name, age, office } = user;
+  const { name, email, role } = user;
   return (
     <Card>
       <h2>{name}</h2>
-      <p>{age} years old</p>
-      <p>{office}</p>
+      <p>Email: {email}</p>
+      <p>Role: {role}</p>
     </Card>
   );
 };

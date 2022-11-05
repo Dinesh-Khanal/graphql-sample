@@ -17,8 +17,8 @@ const USERS = gql`
     getUser {
       id
       name
-      age
-      office
+      email
+      role
     }
   }
 `;
