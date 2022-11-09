@@ -12,8 +12,12 @@
   "author": "Dinesh-Khanal",
   "license": "ISC",
   "dependencies": {
+    "@graphql-tools/schema": "^9.0.9",
     "apollo-server": "^3.10.3",
+    "apollo-server-core": "^3.11.1",
+    "apollo-server-express": "^3.11.1",
     "dotenv": "^16.0.3",
+    "express": "^4.18.2",
     "graphql": "^16.6.0",
     "mongoose": "^6.7.1",
     "nodemon": "^2.0.20",

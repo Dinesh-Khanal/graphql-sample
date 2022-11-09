@@ -12,15 +12,21 @@ const Cards = styled.div`
   flex-wrap: wrap;
   justify-content: center;
 `;
+const USER_DETAIL = gql`
+  fragment userData on User {
+    id
+    name
+    email
+    role
+  }
+`;
 const USERS = gql`
   query getUserData {
     getUser {
-      id
-      name
-      email
-      role
+      ...userData
     }
   }
+  ${USER_DETAIL}
 `;
 
 const Home = () => {
